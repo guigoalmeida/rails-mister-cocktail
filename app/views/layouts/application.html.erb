@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>Mister Cocktail by Gui</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,6 +12,12 @@
   </head>
 
   <body>
+<div class="navbar navbar-light bg-light">
+  <%= link_to "Mr. Cocktail", cocktails_path %>
+  <%=link_to "Create a new cocktail", new_cocktail_path %>
+  </div>
+<div class="container">
     <%= yield %>
+</div>
   </body>
 </html>
